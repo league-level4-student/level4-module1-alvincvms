@@ -3,8 +3,12 @@ package _01_Custom_ArrayList;
 @SuppressWarnings("unchecked")
 
 public class ArrayList <T>{
+	int size;
+	T[] t;
 	
 	public ArrayList() {
+		size = 0;
+		t = (T[]) new Object[size];            
 	}
 	
 	public T get(int loc) throws IndexOutOfBoundsException {
@@ -13,6 +17,7 @@ public class ArrayList <T>{
 	}
 	
 	public void add(T val) {
+		T[] a = (T[]) new Object[t.length + 1];
 		
 	}
 	
